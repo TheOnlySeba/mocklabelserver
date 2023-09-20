@@ -13,15 +13,9 @@ def test():
     levels = ["first", "second"]
     departments = ["basis", "contract", "application"]
     products = [
-        "ERPsim", "SAP S/4HANA TS410", "SAP S/4HANA (GBI/GBS/Kundensonderwünsche)", 
-        "SAP BW", "SAP BusinessObjects", "SAP HANA", "SAP Entwicklungssysteme", 
-        "ERP4Schools / SAP4Schools", "SAP ME/Mii (nur Installation Guides)", 
-        "ERP GBI/ ECC", "ERP IDES", "Move to S/4HANA / Sunset ECC", 
-        "S/4HANA Mandant (GBI)", "GBS / Digital Transformation Curriculum (+Website)", 
-        "SAP BW & BW+BusinessObiects (Lumira)", "HANA", "Business by Design", 
-        "Entwicklungssystem bzw. Mandant", "BIP (Development)", 
-        "(BTP = Business Technology Platform)", "ME. MII. Pco (Industrie 4.0)", 
-        "TS410", "SAP4Schools IUS", "ERPAs~bool", "Signavio", "Business One"
+"ERP GBI/ ECC", "ERP IDES", "Move to S/4HANA / Sunset ECC", "S/4HANA Mandant (GBI)",  "GBS / Digital Transformation Curriculum", "SAP BW & BW+BusinessObjects",
+"ERPsim", "Business by Design", "Entwicklungssystem bzw. Mandant", "Business Technology Platform", "HANA", "Industrie 4.0", "TS410", "SAP4Schools IUS", "ERP4school", "Signavio",
+"UCC Portal", "UCC Website & Social Media"
     ]
     
     # Randomly sample values
@@ -40,6 +34,7 @@ def test():
     if product:
         response["product"] = product
     
+    print(response)
     return jsonify(response)
 
 
